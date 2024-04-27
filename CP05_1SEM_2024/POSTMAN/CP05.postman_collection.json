@@ -1,0 +1,376 @@
+{
+	"info": {
+		"_postman_id": "f2ae8028-1419-4b3f-897b-79d1ae20fcc8",
+		"name": "CP05",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25468191",
+		"_collection_link": "https://bold-moon-219840.postman.co/workspace/Challenge-FIap-Salesforce~62369d8b-f131-44c5-ae3d-9aff1c77e0f1/collection/25468191-f2ae8028-1419-4b3f-897b-79d1ae20fcc8?action=share&source=collection_link&creator=25468191"
+	},
+	"item": [
+		{
+			"name": "Collections",
+			"item": [
+				{
+					"name": "Read All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/colecoes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"colecoes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Collection",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Cavaleiros do Zodíacooo 167\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/colecoes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"colecoes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read Collection By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/colecoes/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"colecoes",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Collection By Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Cavaleiros do Zodíaco 167\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/colecoes/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"colecoes",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read Collection By Id Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/colecoes/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"colecoes",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read Cards from  Collection By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/colecoes/1/cards",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"colecoes",
+								"1",
+								"cards"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Collection",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/colecoes/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"colecoes",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read All Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/colecoes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"colecoes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cards",
+			"item": [
+				{
+					"name": "Read All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/card",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"card"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"superTrunfo\": true,\r\n    \"cod_card\": \"A4\",\r\n    \"collectionsId\": 2,\r\n    \"nome\": \"Card Name 2\",\r\n    \"nomeDeCavaleiro\": \"Knight Name 2\",\r\n    \"grupoDeCavaleiros\": \"Knight Group 2\",\r\n    \"soco\": 100,\r\n    \"chute\": 200,\r\n    \"tecnica\": 300,\r\n    \"conhecimento\": 400,\r\n    \"forca\": 500\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/card",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"card"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read By CodCard",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/card/a4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"card",
+								"a4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update By CodCard",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"superTrunfo\": false,\r\n    \"cod_card\": \"A4\",\r\n    \"collectionsId\": 2,\r\n    \"nome\": \"Card Name 2\",\r\n    \"nomeDeCavaleiro\": \"Knight Name 2\",\r\n    \"grupoDeCavaleiros\": \"Knight Group 2\",\r\n    \"soco\": 100,\r\n    \"chute\": 200,\r\n    \"tecnica\": 300,\r\n    \"conhecimento\": 400,\r\n    \"forca\": 500\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/card/a4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"card",
+								"a4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read By CodCard Copy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/card/a4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"card",
+								"a4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete By CodCard",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/card/a2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"card",
+								"a2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read All Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/card",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"card"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
