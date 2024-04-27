@@ -51,6 +51,10 @@ Finalmente, a classe `Main.java` é executada para iniciar a aplicação.
 - [Maven](https://maven.apache.org/)
 - [SQL](https://www.microsoft.com/sql-server/)
 
+## Link da playlist no YouTube com o Passo a Passo
+- [Playlist](https://www.youtube.com/playlist?list=PLNQo25lSnfZp24-lUsbuaGqrWIamJl9gC)
+
 ## Autores
 
-- Mauricio Pereira - [LinkedIn](https://www.linkedin.com/in/mauriciovpereira/) - [GitHub](https://github.com/Mauricio-Pereira)
+- ### Mauricio Pereira - [LinkedIn](https://www.linkedin.com/in/mauriciovpereira/) - [GitHub](https://github.com/Mauricio-Pereira)
+
